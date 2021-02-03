@@ -369,46 +369,6 @@ const data = [{
   }
 ]
 
-/**
- * @param {*} name
- * @param {*} args
- */
-const searchString = (name, args) => {
-  const regex = RegExp(args, "g");
-  return regex.test(name);
-};
-
-/**
- *
- * @param {*} args
- * @param {*} pays
- */
-export const filter = (args, pays) => {
-  return pays.people.reduce((acc, curr) => {
-    const animal = curr.animals.filter((animal) =>
-      searchString(animal.name, args)
-    );
-
-    if (animal.length) {
-      return acc;
-    }
-
-    return [
-      ...acc,
-      {
-        name: pays.name,
-        people: [
-          {
-            name: curr.name,
-            animals: animal
-          }
-        ]
-      }
-    ];
-  }, []);
-};
 
 
-module.exports = {
-  data
-}
+export { data };

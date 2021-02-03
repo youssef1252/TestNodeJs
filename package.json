@@ -1,0 +1,25 @@
+{
+  "name": "testnodejs",
+  "version": "1.0.0",
+  "description": "test technique nodejs",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/youssef1252/TestNodeJs.git"
+  },
+  "author": "youssef benkhair",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/youssef1252/TestNodeJs/issues"
+  },
+  "homepage": "https://github.com/youssef1252/TestNodeJs#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.12.1",
+    "babel-jest": "^26.6.2",
+    "jest": "^26.6.2"
+  }
+}
